@@ -207,5 +207,188 @@
       "Vérifier que chaque élément optgroup est doté d'un attribut label associant un libellé pertinent au groupe d'options concern"
     ],
     "screenshotsSources": []
+  },
+  {
+    "id": 101,
+    "title": "L'identité de l'auteur, de la société ou de l'organisation est indiquée.",
+    "authors": ["Matteo LINGLET"],
+    "path": "/rules/101",
+    "description": "Dans de nombreux pays, il s’agit d’une obligation légale. Mais au-delà des aspects juridiques locaux, il est bon qu’une personne se porte garante des contenus du site et que cette personne soit identifiée.",
+    "tags": ["Conception", "Editorial", "Identification et contact", "SEO"],
+    "objectives": [
+      "Permettre aux utilisateurs d’identifier sans ambiguïté un interlocuteur physique capable de répondre aux questions éventuelles sur les contenus proposés, ou d’assumer les responsabilités liées à ces contenus.",
+      "Rassurer l'utilisateur en lui permettant d'identifier directement l'auteur (au sens large).",
+      "Limiter les risques de défiance.",
+      "Améliorer la prise en compte des contenus par les moteurs de recherche et outils d’indexation"
+    ],
+    "implementationIntro": "Indiquer, au moins sur une page et idéalement sur chaque page, le nom de l'auteur, de l'entité ou de la société qui propose le service.",
+    "implementation": ["Si le nom du site est identique à celui de l'entité qui le propose, ce qui est relativement fréquent, notamment pour les entreprises, la mention de ce nom dans le logo ou la baseline suffit à respecter la bonne pratique."],
+    "control": [
+      "Au sein de la page d'accueil ou au moins dans une page accessible depuis la page d'accueil (fréquemment, la page des mentions légales) ou encore dans chacune des pages du site (souvent en pied de page) :",
+      "Vérifier manuellement que le nom de l'auteur, de l'entité ou de la société proposant le service est mentionné dans au moins une de ces pages."
+    ],
+    "screenshotsSources": [
+      "https://www.gmail.com/",
+      "https://www.nuxt.com/blog",
+      "https://developer.mozilla.org/fr/"
+    ]
+  },
+  {
+    "id": 102,
+    "title": "Le titre de chaque page permet d'identifier le site.",
+    "authors": ["Matteo LINGLET"],
+    "path": "/rules/102",
+    "description": "Le titre d’une page web est amené à s’afficher dans divers endroits : navigateurs, favoris, titre d’un contenu partagé via les réseaux sociaux, etc. Si chacun de ces titres contient le nom de votre site, les utilisateurs pourront l’identifier plus facilement et retrouver rapidement les contenus qui s’y rapportent.",
+    "tags": ["Accessibilité", "Développement", "Identification et contact", "SEO"],
+    "objectives": [
+      "Permettre aux utilisateurs d'identifier immédiatement le site dans les onglets, les favoris, dans la fenêtre du navigateur ou encore dans les lecteurs d'écran.",
+      "Améliorer le référencement du site et sa présentation dans les moteurs de recherche.",
+      "Améliorer l’accessibilité des contenus aux personnes handicapées.",
+      "Améliorer la prise en compte des contenus par les moteurs de recherche et outils d’indexation"
+    ],
+    "implementationIntro": "",
+    "implementation": ["Rédiger le contenu de l'élément title de chaque page de manière à y indiquer le nom du site."],
+    "control": [
+      "Pour chaque page du site, vérifier que le nom du site est présent dans le titre (élément title) de page.",
+      "Le contrôle peut être effectué de manière exhaustive si l'on dispose d'un outil permettant de dresser la liste complète des titres de toutes les pages (c'est le cas, par exemple, de Xenu's Link Sleuth). Il peut également être effectué à partir d'une vérification des templates utilisés par le CMS ou d'un échantillon de pages-types représentatives de ceux-ci. Dans tous les cas, on veillera à prendre en compte tout particulièrement les pages dépendant de services tiers, où la bonne pratique risque davantage de ne pas avoir été prise en compte."
+    ],
+    "screenshotsSources": [
+      "https://www.gmail.com/",
+      "https://www.nuxt.com/blog",
+      "https://developer.mozilla.org/fr/"
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Le titre de chaque page permet d'identifier son contenu.",
+    "authors": ["Matteo LINGLET"],
+    "path": "/rules/103",
+    "description": "Identifier le site en regardant le titre d’une page, c’est bien, mais comprendre très vite la nature du contenu d’une page, c’est encore mieux. Et ce ne sont pas les moteurs de recherche qui diront le contraire.",
+    "tags": ["Basics", "Accessibilité", "Editorial", "Identification et contact", "SEO"],
+    "objectives": [
+      "Permettre aux utilisateurs d'identifier immédiatement la nature des contenus de chaque page dans les onglets, les favoris, dans la fenêtre du navigateur ou encore dans les lecteurs d'écran.",
+      "Améliorer le référencement des pages et leur présentation dans les moteurs de recherche.",
+      "Améliorer l’accessibilité des contenus aux personnes handicapées.",
+      "Améliorer la prise en compte des contenus par les moteurs de recherche et outils d’indexation"
+    ],
+    "implementationIntro": "",
+    "implementation": [
+      "Rédiger le contenu de l'élément title de chaque page de manière à ce qu'il décrive, de la façon la plus concise possible, le contenu ou la fonction de la page , y compris à la suite d'une requête Ajax modifiant de manière essentielle le contenu de la page.",
+      "Préciser quelle est l'étape en cours d'un processus dans l'élément title des pages. Par exemple, inscrire « Étape 3 de votre inscription » dans l'élément title de la page correspondant à la troisième étape d'un formulaire d'inscription.",
+      "Préciser, dans le cas de l'affichage d'une série de résultats de recherche, quel est l'intervalle de résultats affiché dans la page courante. Par exemple, « Résultats 10 à 19 de la recherche sur “Foo” ».",
+      "Préciser l'état dans le titre d'une page de demande de confirmation ou d'annulation lors de la soumission d'un formulaire (exemple : « Demande de confirmation de suppression - Mes documents »)."
+    ],
+    "control": [
+      "Dans toutes les pages du site, y compris dans les pages d'un processus ou d'une série de résultats de recherche, ou encore dans les pages dont le contenu peut être modifié de manière majeure via Ajax :",
+      "Vérifier que chaque titre de page (élément title) permet d'identifier le contenu ou la fonction de la page."
+    ],
+    "screenshotsSources": [
+      "https://www.gmail.com/",
+      "https://www.nuxt.com/blog",
+      "https://developer.mozilla.org/fr/"
+    ]
+  },
+  {
+    "id": 104,
+    "title": "Le code source des pages contient un appel valide à une icône de favori.",
+    "authors": ["Matteo LINGLET"],
+    "path": "/rules/104",
+    "description": "L’icône de favori est la petite image qui s’affiche dans votre navigateur et dans vos marque-pages ou favoris. Elle mérite d’être bien traitée, car elle joue un rôle important dans l’identification durable de votre site.",
+    "tags": ["Basics", "Conception", "Développement", "Identification et contact"],
+    "objectives": [
+      "Améliorer l'identification visuelle du site et de ses pages.",
+      "Faciliter l'identification dans le navigateur et dans les favoris ou signets.",
+      "Permettre l'affichage, l'appel, et la mémorisation éventuelle de l'icône de favori par tous les navigateurs."
+    ],
+    "implementationIntro": "Selon le format choisi pour l'icône et son emplacement, utiliser un lien du type :",
+    "implementation": [
+      "<link rel='icon' type='image/png' href='/img/favicon.png'/> (format png, mais aussi jpg, gif, etc.) ;",
+      "<link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico' /> (format ico Microsoft seul reconnu par Internet Explorer)."
+    ],
+    "control": [
+      "Dans le code source de chaque page examinée :",
+      "Vérifier, à l'aide d'un outil de développement web ou d'un inspecteur de code, que l'élément link rel est présent dans l'en-tête de page head ;",
+      "Vérifier que sa syntaxe est de la forme :",
+      "<link rel='icon' type='image/png' href='/img/favicon.png'/> pour les formats png, mais aussi jpg, gif, etc. ;",
+      "ou <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico' /> pour le format ico Microsoft."
+    ],
+    "screenshotsSources": [
+      "https://www.gmail.com/",
+      "https://www.nuxt.com/blog",
+      "https://developer.mozilla.org/fr/"
+    ]
+  },
+  {
+    "id": 105,
+    "title": "L’adresse complète et le numéro de téléphone des sociétés et organisations sont disponibles depuis toutes les pages.",
+    "authors": ["Matteo LINGLET"],
+    "path": "/rules/105",
+    "description": "De nombreux internautes se rendent sur un site pour chercher l’adresse ou le numéro de téléphone de l’entité. Faites-leur gagner du temps en donnant immédiatement cette information.",
+    "tags": ["Conception", "Editorial", "Identification et contact", "SEO"],
+    "objectives": [
+      "Donner aux utilisateurs qui le souhaitent la possibilité d'accéder sans difficulté aux moyens de contact téléphoniques et postaux.",
+      "Améliorer la prise en compte des contenus par les moteurs de recherche et outils d’indexation",
+      "Renforcer la confiance en associant à l'entité un élément d'identification concret"
+    ],
+    "implementationIntro": "Indiquer l'adresse postale complète et le numéro de téléphone de la société ou de l'organisme",
+    "implementation": [
+      "Dans chaque page du site ;",
+      "Ou dans une page Contact ou À propos, accessible directement depuis chaque page du site."
+    ],
+    "control": [
+      "Dans chaque page du site ou dans au moins une page directement disponible depuis toutes les pages du site",
+      "Vérifier la présence de l'adresse postale complète et du numéro de téléphone de la société ou de l'organisme."
+    ],
+    "screenshotsSources": [
+      "https://www.gmail.com/",
+      "https://www.nuxt.com/blog",
+      "https://developer.mozilla.org/fr/"
+    ]
+  },
+  {
+    "id": 106,
+    "title": "Le numéro d'immatriculation délivré aux sociétés ou organisations au terme des procédures légales d'enregistrement en vigueur dans leur pays est indiqué.",
+    "authors": ["Matteo LINGLET"],
+    "path": "/rules/106",
+    "description": "Sur Internet, une société peut être totalement fictive. La simple mention d’un numéro officiel permet de donner un indice sur sa réalité administrative.",
+    "tags": ["Editorial", "Identification et contact"],
+    "objectives": [
+      "Fournir aux utilisateurs une indication vérifiable de l'existence officielle de la structure qui propose les contenus ou le service."
+    ],
+    "implementationIntro": "Indiquer le numéro d'immatriculation délivré à la société ou association au terme des procédures légales d'enregistrement en vigueur dans son pays. Cette bonne pratique ne s'applique pas aux personnes physiques, sauf si elles sont constituées en entité juridique (freelances, auto-entrepreneurs, etc.).",
+    "implementation": [],
+    "control": [
+      "Sur la page d'accueil, ou sur la page des mentions légales, la page d'à propos, de contact, ou encore dans les pages consacrées aux conditions générales d'utilisation ou de vente :",
+      "Vérifier que le numéro d'immatriculation délivré à la société ou association au terme des procédures légales d'enregistrement en vigueur dans son pays est indiqué."
+    ],
+    "screenshotsSources": [
+      "https://www.gmail.com/",
+      "https://www.nuxt.com/blog",
+      "https://developer.mozilla.org/fr/"
+    ]
+  },
+  {
+    "id": 107,
+    "title": "Au moins deux moyens de contact sont proposés.",
+    "authors": ["Matteo LINGLET"],
+    "path": "/rules/107",
+    "description": "Mettre à la disposition des internautes un formulaire de contact ou un numéro de téléphone, c’est une bonne chose. Cependant, l’un des deux peut être en défaut ou poser problème aux usagers.",
+    "tags": ["Accessibilité", "Conception", "Editorial", "Identification et contact"],
+    "objectives": [
+      "Optimiser les possibilités de retour d’information de la part des utilisateurs.",
+      "Éviter de mettre l’utilisateur en difficulté en cas d’indisponibilité ou de problèmes d’utilisation de l’un des moyens de contact."
+    ],
+    "implementationIntro": "Par exemple, indiquer l’adresse postale ou le numéro de téléphone de l’auteur et/ou du webmestre et mettre en place un formulaire permettant de les contacter.",
+    "implementation": [],
+    "control": [
+      "Dans l’ensemble du site :",
+      "Vérifier la présence d’au moins deux modes de contact.",
+      "Vérifier qu’il est possible de joindre effectivement l’auteur et/ou le responsable technique via les modes de contact proposés."
+    ],
+    "screenshotsSources": [
+      "https://www.gmail.com/",
+      "https://www.nuxt.com/blog",
+      "https://developer.mozilla.org/fr/"
+    ]
   }
 ]
