@@ -76,24 +76,22 @@
   },
   {
     "id": 9,
-    "title": "Les zones de contenu substituables sont identifiées et accessibles.",
+    "title": "Les conditions de modération des espaces publics sont indiquées.",
     "path": "/rules/9",
-    "authors": ["Abdulmalek ESUGHI"],
-    "description": "Certains contenus peuvent être affichés de plusieurs façons différentes selon la situation de l'utilisateur. Ces contenus dynamiques ou personnalisés doivent rester accessibles même si l'utilisateur n'a pas accès à la version habituelle.",
-    "tags": ["Accessibilité", "Conception", "Développement"],
+    "tags": ["Contenus", "Editorial"],
     "objectives": [
-      "Assurer l'accessibilité des contenus dynamiques et personnalisés.",
-      "Permettre aux utilisateurs d'accéder aux contenus substitutifs si la version principale n'est pas accessible."
+      "Informer les utilisateurs des règles de modération des espaces publics.",
+      "Assurer la transparence concernant les contenus autorisés et interdits."
     ],
-    "implementationIntro": "Identifier les zones de contenu substituables et mettre en place des mécanismes d'accès alternatifs.",
+    "implementationIntro": "Afficher clairement les conditions de modération des espaces publics.",
     "implementation": [
-      "Identifier les zones de contenu qui peuvent être affichées de plusieurs façons",
-      "Assurer que les contenus substitutifs sont accessibles à tous les utilisateurs",
-      "Mettre en place des liens ou des commandes pour accéder aux versions alternatives"
+      "Publier les conditions de modération de manière visible",
+      "Indiquer quels types de contenus sont autorisés ou interdits",
+      "Expliquer les conséquences du non-respect des règles"
     ],
     "control": [
-      "Identifier les zones de contenu substituables du site.",
-      "Vérifier que les utilisateurs peuvent accéder aux contenus substitutifs de façon équitable."
+      "Vérifier la présence de conditions de modération dans les espaces publics.",
+      "Vérifier que les conditions sont faciles à trouver et à comprendre."
     ],
     "screenshotsSources": [
       "",
@@ -113,122 +111,125 @@
       "Diminuer le nombre de demandes de rectification ou de suppression."
     ],
     "implementationIntro": "Mettre en place une prévisualisation des informations saisies avant la soumission définitive du formulaire, avec possibilité de les modifier.",
-    "implementation": [],
+    "implementation": [
+      "Afficher un aperçu du contenu avant publication",
+      "Permettre la modification du contenu en prévisualisation",
+      "Ajouter un bouton de confirmation final"
+    ],
     "control": [
       "Pour chaque espace public du site (zone de commentaire, forum, page personnelle publique, avatar, portfolio de documents, etc.) :",
       "Saisir des informations destinées à être rendues publiques telles que des images associées à un compte ou un commentaire.",
       "Vérifier que la soumission définitive du formulaire de saisie est précédée d'une étape permettant, si l'utilisateur le souhaite, de contrôler et de modifier le résultat de sa saisie avant publication."
     ],
     "screenshotsSources": [
-
+      "",
+      "",
+      ""
     ]
   },
   {
     "id": 11,
-    "title": "L'utilisateur est libre de ses choix de navigation et de consultation.",
+    "title": "Les espaces publics proposent au moins un moyen de signaler les abus.",
     "path": "/rules/11",
-    "authors": ["Abdulmalek ESUGHI"],
-    "description": "L'utilisateur n'aime pas être manipulé ou piégé. Fenêtres qui s'ouvrent sans qu'on les ait demandées, liens qui font ce qu'on n'attendait pas, contenus qui se ferment malgré nous : voilà le type de pratiques qui agacent les visiteurs.",
-    "tags": ["Accessibilité", "Conception", "UX"],
+    "tags": ["Conception", "Contenus"],
     "objectives": [
-      "Respecter la liberté de choix de l'utilisateur.",
-      "Éviter les tactiques manipulatrices ou trompeuses."
+      "Permettre aux utilisateurs de signaler les contenus abusifs ou inappropriés.",
+      "Assurer une modération efficace des espaces publics."
     ],
-    "implementationIntro": "Garantir que l'utilisateur reste maître de sa navigation.",
+    "implementationIntro": "Mettre en place un système de signalement des abus dans les espaces publics.",
     "implementation": [
-      "Ne pas ouvrir de nouvelles fenêtres ou onglets sans action explicite de l'utilisateur",
-      "Ne pas utiliser de redirige implicites",
-      "Permettre à l'utilisateur de fermer facilement les contenus modaux ou les dialogues",
-      "Informer clairement avant tout changement de contexte"
+      "Ajouter un bouton ou un lien « Signaler » visible sur chaque contenu",
+      "Mettre en place un formulaire simple pour signaler les abus",
+      "Définir une procédure de traitement des signalements"
     ],
     "control": [
-      "Vérifier qu'aucune fenêtre ne s'ouvre sans action de l'utilisateur.",
-      "Vérifier que les liens font ce qu'on en attend.",
-      "Vérifier que l'utilisateur peut fermer les dialogues et modaux facilement."
+      "Vérifier la présence d'un moyen de signaler les abus dans les espaces publics.",
+      "Vérifier que ce moyen est facilement accessible et fonctionnel."
     ],
     "screenshotsSources": [
-
+      "",
+      "",
+      ""
     ]
   },
   {
     "id": 12,
-    "title": "La recherche est disponible et efficace, notamment sur son propre contenu.",
+    "title": "Chaque graphique est accompagné de ses données numériques.",
     "path": "/rules/12",
-    "authors": ["Abdulmalek ESUGHI"],
-    "description": "Sur un site grand public ou professionnel, un moteur de recherche interne facilite grandement la recherche d'information, notamment si le site contient beaucoup de contenus. Une fonction de recherche en texte intégral permet à l'utilisateur de trouver rapidement ce qu'il cherche.",
-    "tags": ["Conception", "Contenus", "Développement", "SEO", "UX"],
+    "tags": ["Accessibilité", "Conception", "Contenus", "Editorial", "SEO"],
     "objectives": [
-      "Permettre à l'utilisateur de trouver rapidement les contenus pertinents.",
-      "Améliorer l'accessibilité des contenus du site."
+      "Rendre les graphiques accessibles à tous les utilisateurs.",
+      "Permettre la réutilisation et la vérification des données."
     ],
-    "implementationIntro": "Mettre en place une fonction de recherche performante et facile d'accès.",
+    "implementationIntro": "Accompagner chaque graphique de ses données numériques source.",
     "implementation": [
-      "Installer un moteur de recherche interne performant",
-      "Indexer les contenus pertinents du site",
-      "Afficher les résultats de manière claire et hiérarchisée",
-      "Afficher le nombre de résultats trouvés"
+      "Afficher un tableau de données numériques avec le graphique",
+      "Fournir un lien de téléchargement des données",
+      "Ajouter une description textuelle du graphique"
     ],
     "control": [
-      "Rechercher un terme présent dans le site.",
-      "Vérifier que la recherche fonctionne et que les résultats sont pertinents.",
-      "Vérifier que le nombre de résultats trouvés est affiché."
+      "Vérifier que chaque graphique dispose de ses données numériques.",
+      "Vérifier que les utilisateurs peuvent accéder aux données même sans affichage graphique."
     ],
     "screenshotsSources": [
-
+      "",
+      "",
+      ""
     ]
   },
   {
     "id": 13,
-    "title": "Les nouvelles fenêtres ou onglets ne s'ouvrent que si c'est nécessaire.",
+    "title": "La page des résultats de recherche indique le nombre de résultats, le nombre de pages de résultats, et le nombre de résultats par page.",
     "path": "/rules/13",
-    "authors": ["Abdulmalek ESUGHI"],
-    "description": "Certains navigateurs ou certaines configurations ne gèrent pas bien l'ouverture de nouvelles fenêtres ou l'accès aux onglets. D'autre part, cela peut perdre l'utilisateur qui perd de vue la fenêtre d'origine. En règle générale, il est préférable de laisser à l'utilisateur le choix d'ouvrir un lien dans une nouvelle fenêtre ou un nouvel onglet.",
-    "tags": ["Accessibilité", "Conception", "UX"],
+    "tags": ["Conception", "Contenus", "Développement"],
     "objectives": [
-      "Respecter les choix de navigation de l'utilisateur.",
-      "Assurer la compatibilité avec tous les navigateurs."
+      "Aider l'utilisateur à évaluer rapidement le volume de résultats.",
+      "Permettre une navigation efficace dans les résultats de recherche."
     ],
-    "implementationIntro": "Limiter l'ouverture de nouvelles fenêtres ou onglets au strict nécessaire.",
+    "implementationIntro": "Afficher clairement les informations de pagination sur la page de résultats.",
     "implementation": [
-      "Ne pas ouvrir de nouvelles fenêtres ou onglets par défaut",
-      "Laisser l'utilisateur choisir d'ouvrir un lien dans un nouvel onglet",
-      "Si une nouvelle fenêtre doit s'ouvrir, le signaler clairement à l'utilisateur"
+      "Afficher le nombre total de résultats trouvés",
+      "Indiquer le nombre de pages disponibles",
+      "Afficher le nombre de résultats affichés par page",
+      "Permettre de modifier le nombre de résultats par page"
     ],
     "control": [
-      "Cliquer sur tous les liens du site.",
-      "Vérifier qu'aucune nouvelle fenêtre ne s'ouvre sans action volontaire de l'utilisateur.",
-      "Si une nouvelle fenêtre s'ouvre, vérifier que c'est clairement signalé."
+      "Effectuer une recherche sur le site.",
+      "Vérifier que le nombre total de résultats est affiché.",
+      "Vérifier que le nombre de pages est indiqué.",
+      "Vérifier que le nombre de résultats par page est visible."
     ],
     "screenshotsSources": [
-
+      "",
+      "",
+      ""
     ]
   },
   {
     "id": 14,
-    "title": "Les informations relatives à la sécurité du site sont aisément accessibles.",
+    "title": "Les contenus ne détournent pas de caractères pour simuler une mise en forme visuelle.",
     "path": "/rules/14",
-    "authors": ["Abdulmalek ESUGHI"],
-    "description": "Les visiteurs veulent savoir si le site est sécurisé, comment leurs données personnelles sont traitées et quelles sont les conditions de sécurité en vigueur. Les informations relatives à la sécurité, à la politique de confidentialité et aux conditions d'utilisation doivent être faciles à trouver et à comprendre.",
-    "tags": ["Conception", "Contenus", "Sécurité", "Confiance"],
+    "tags": ["Accessibilité", "Contenus", "Editorial", "SEO"],
     "objectives": [
-      "Assurer que les utilisateurs comprennent les conditions de sécurité.",
-      "Respecter la transparence concernant le traitement des données personnelles.",
-      "Construire la confiance avec les utilisateurs."
+      "Assurer l'accessibilité des contenus pour tous les utilisateurs.",
+      "Améliorer la lisibilité et la compréhension du contenu."
     ],
-    "implementationIntro": "Rendre les informations de sécurité et de confidentialité facilement accessibles.",
+    "implementationIntro": "Utiliser les balises HTML appropriées plutôt que des caractères détournés.",
     "implementation": [
-      "Afficher un lien vers la politique de confidentialité dans le pied de page",
-      "Mettre à disposition les conditions générales d'utilisation",
-      "Indiquer les modalités de sécurisation des données personnelles",
-      "Afficher le certificat de sécurité ou les badges de confiance si applicable"
+      "Utiliser les titres HTML (h1, h2, h3) au lieu d'astérisques ou points",
+      "Utiliser les listes HTML au lieu de tirets ou numéros détournés",
+      "Utiliser l'emphase HTML (strong, em) au lieu d'astérisques ou majuscules",
+      "Utiliser CSS pour la mise en forme visuelle"
     ],
     "control": [
-      "Vérifier la présence de liens vers les pages de sécurité et de confidentialité.",
-      "Vérifier que la politique de confidentialité est claire et facilement compréhensible.",
-      "Vérifier que les conditions de sécurité sont documentées et accessibles."
+      "Vérifier que les titres utilisent les balises HTML appropriées.",
+      "Vérifier qu'aucun caractère ne remplace une balise de sémantique.",
+      "Vérifier la lisibilité du code source par les lecteurs d'écran."
     ],
     "screenshotsSources": [
-
+      "",
+      "",
+      ""
     ]
   },
   {
