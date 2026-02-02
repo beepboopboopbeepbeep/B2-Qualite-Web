@@ -1402,6 +1402,9 @@
     "screenshotsSources": [
       "Bonne pratique - Icônes avec texte",
       "Mauvaise pratique - Icônes seules"
+    ]
+  },
+  {
     "id": 101,
     "title": "L'identité de l'auteur, de la société ou de l'organisation est indiquée.",
     "authors": ["Matteo LINGLET"],
