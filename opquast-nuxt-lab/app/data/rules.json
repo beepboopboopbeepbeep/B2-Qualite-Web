@@ -39,11 +39,7 @@
     "authors": ["Alexandre CHARLIER"],
     "path": "/rules/2",
     "description": "Sur Internet, rien n’est plus facile que de copier un texte, une image, un son. Quels que soient vos choix en matière de réutilisation de vos contenus, il est essentiel d’informer les internautes sur leurs droits dans ce domaine.",
-    "tags": [
-      "Conception",
-      "Contenus",
-      "Éditorial"
-    ],
+    "tags": ["Conception", "Contenus", "Éditorial"],
     "objectives": [
       "Informer les utilisateurs sur les conditions sous lesquelles sont publiés les contenus.",
       "Informer les utilisateurs sur les conditions de copie et de réutilisation."
@@ -62,13 +58,7 @@
     "authors": ["Alexandre CHARLIER"],
     "path": "/rules/3",
     "description": "Une métadonnée est une information contenue dans le code source d’une page web qui permet de la décrire ou de fournir des informations à son propos. Cette règle concerne la métadonnée description qui, comme son nom l’indique, permet de décrire la page.",
-    "tags": [
-      "Basics",
-      "Contenus",
-      "Développement",
-      "Editorial",
-      "SEO"
-    ],
+    "tags": ["Basics", "Contenus", "Développement", "Editorial", "SEO"],
     "objectives": [
       "Permettre aux outils de recherche et d'indexation d'extraire des informations à propos du contenu des pages.",
       "Améliorer la restitution aux utilisateurs des résultats de recherche.",
@@ -92,12 +82,7 @@
     "authors": ["Alexandre CHARLIER"],
     "path": "/rules/4",
     "description": "Le 12/11/10 fait-il référence au 12 novembre 2010 (format de date européen) ou au 11 décembre 2010 (format américain) ? À vous de faire en sorte que vos utilisateurs n’aient jamais à se poser cette question.",
-    "tags": [
-      "Accessibilité",
-      "Conception",
-      "Contenus",
-      "Editorial"
-    ],
+    "tags": ["Accessibilité", "Conception", "Contenus", "Editorial"],
     "objectives": [
       "Éviter aux utilisateurs les risques de méprise sur le sens d’une date.",
       "Faciliter la compréhension et la réutilisation des contenus concernés."
@@ -106,13 +91,13 @@
       "S’assurer que le mois est écrit en toutes lettres (« décembre ») ou en abrégé (« déc. »), mais pas au format numérique.",
       "Indiquer les 4 chiffres de l’année."
     ],
-    "implementationConclusion" : "Cette exigence doit être prévue dans les systèmes de gestion de contenu où la datation est automatisée.",
+    "implementationConclusion": "Cette exigence doit être prévue dans les systèmes de gestion de contenu où la datation est automatisée.",
     "controlIntro": "Identifier les pages comportant des dates, et pour chacune des dates trouvées :",
     "control": [
       "Vérifier que le mois n’est pas indiqué dans un format numérique, mais en lettre (complet ou abrégé).",
       "Vérifier que l’année est indiquée sur quatre chiffres et non deux."
     ],
-    "controlConclusion":"Les dates à saisir par l’utilisateur final dans les formulaires ne sont pas concernées par cette bonne pratique : leur format, quel qu'il soit, est considéré comme suffisamment explicite, dès lors que la saisie s’effectue via un datepicker ou bien manuellement mais avec une indication du format attendu (du type \"JJ/MM/AA\").",
+    "controlConclusion": "Les dates à saisir par l’utilisateur final dans les formulaires ne sont pas concernées par cette bonne pratique : leur format, quel qu'il soit, est considéré comme suffisamment explicite, dès lors que la saisie s’effectue via un datepicker ou bien manuellement mais avec une indication du format attendu (du type \"JJ/MM/AA\").",
     "screenshotsSources": [
       "https://www.laprovence.com/",
       "https://www.sncf-connect.com/",
@@ -164,10 +149,7 @@
     "authors": ["Alexandre CHARLIER"],
     "path": "/rules/6",
     "description": "Dans la vraie vie, lorsque vous trouvez une revue ou un vieux journal, la première chose que vous regardez est la date de publication. C’est normal, vous avez absolument besoin de cette information pour comprendre le contenu et pour le remettre en contexte. Sur le web, c’est la même chose, certaines informations doivent absolument être accompagnées de leur date de publication.",
-    "tags": [
-      "Conception",
-      "Contenus"
-    ],
+    "tags": ["Conception", "Contenus"],
     "objectives": [
       "Permettre à l’utilisateur de remettre l’information en contexte.",
       "Prévenir la diffusion d’informations obsolètes.",
@@ -187,19 +169,13 @@
     "authors": ["Alexandre CHARLIER"],
     "path": "/rules/7",
     "description": "Les auteurs de ce livre sont des exemples vivants de la capacité quasi instantanée de l’être humain à jargonner dès qu’il accumule quelques connaissances. Un petit lexique ou un glossaire, et hop, le visiteur du site peut appréhender les contenus.",
-    "tags": [
-      "Accessibilité",
-      "Contenus",
-      "Editorial",
-      "SEO"
-    ],
+    "tags": ["Accessibilité", "Contenus", "Editorial", "SEO"],
     "objectives": [
       "Permettre aux utilisateurs de comprendre les contenus sectoriels ou à caractère technique.",
       "Faciliter l'utilisation d'un service.",
       "Améliorer le référencement sur des mots-clés ou expressions techniques.",
       "Améliorer l’accessibilité des contenus aux personnes handicapées.",
       "Améliorer la prise en compte des contenus par les moteurs de recherche et outils d’indexation."
-
     ],
     "implementationIntro": "Pour mettre en œuvre cette bonne pratique, il s'agira de fournir :",
     "implementation": [
@@ -216,6 +192,7 @@
       "https://www.cnil.fr",
       "https://www.ameli.fr",
       "https://www.w3.org"
+    ],
     "objective": "Assurer que les informations essentielles sont facilement accessibles et compréhensibles pour tous les utilisateurs, y compris ceux ayant des besoins spécifiques."
   },
   {
