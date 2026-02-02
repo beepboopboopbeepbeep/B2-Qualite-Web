@@ -698,7 +698,12 @@
     "authors": ["ROMAIN DANIEL"],
     "path": "/rules/132",
     "description": "Les outils automatiques et les robots qui parcourent vos contenus ne peuvent pas forcément en deviner la langue principale ni ses éventuelles variations. La présence d’un terme en langue étrangère dans une page peut et doit être signalé.",
-    "tags": ["Accessibilité", "Développement", "Contenus", "Internationalisation"],
+    "tags": [
+      "Accessibilité",
+      "Développement",
+      "Contenus",
+      "Internationalisation"
+    ],
     "objectives": [
       "Permettre aux synthèses vocales de prononcer correctement les passages en langue étrangère.",
       "Permettre aux outils de traduction de traiter correctement les contenus.",
@@ -778,6 +783,7 @@
     "control": [
       "Configurer son navigateur pour demander une langue spécifique (ex: Espagnol).",
       "Accéder au site et vérifier qu'il s'affiche automatiquement dans cette langue (si disponible)."
+    ],
     "screenshotsSources": [
       "https://www.laposte.fr/",
       "https://www.service-public.fr/",
@@ -1039,6 +1045,9 @@
     "control": [
       "Inspecter le code source des liens ne contenant pas de texte visible.",
       "Vérifier la présence d'un mécanisme de remplacement (alt, aria-label, texte caché)."
+    ]
+  },
+  {
     "id": 25,
     "title": "L'en-tête HTTP Referrer-Policy est configuré",
     "authors": ["Edwiyyin"],
@@ -1187,6 +1196,9 @@
       "Parcourir les liens de la page.",
       "Vérifier si le texte du lien seul suffit à comprendre la destination.",
       "Vérifier l'absence de liens dupliqués ayant le même libellé mais des destinations différentes."
+    ]
+  },
+  {
     "id": 87,
     "title": "Les processus complexes sont accompagnés de la liste de leurs étapes.",
     "authors": ["Adrien LECOMTE"],
@@ -1475,6 +1487,9 @@
     "control": [
       "Naviguer entre plusieurs pages (Accueil, Liste, Détail, Admin).",
       "Vérifier que les liens de navigation, les liens contextuels et les boutons d'action conservent le même style visuel pour la même fonction."
+    ]
+  },
+  {
     "id": 89,
     "title": "Chaque étape d'un processus complexe permet de revenir à l'étape précédente.",
     "authors": ["Adrien LECOMTE"],
@@ -1554,7 +1569,6 @@
     "screenshotsSources": []
   },
   {
-
     "id": 139,
     "title": "Le soulignement est réservé aux liens.",
     "authors": ["ROMAIN DANIEL"],
@@ -1625,8 +1639,9 @@
       "Revenir à la page précédente.",
       "Vérifier que le lien cliqué a changé d'aspect visuel (couleur)."
     ],
-    "screenshotsSources": []},
-
+    "screenshotsSources": []
+  },
+  {
     "id": 93,
     "title": "Les éléments d'une liste déroulante qui peuvent être regroupés le sont de manière appropriée.",
     "authors": ["Adrien LECOMTE"],
@@ -2455,8 +2470,7 @@
       "https://www.opquast.com",
       "https://github.com"
     ]
-  }
-  ,
+  },
   {
     "id": 142,
     "title": "Les liens internes et externes sont différenciés",
@@ -2477,11 +2491,7 @@
     "control": [
       "Vérifier que les liens internes et externes sont différenciés par le moyen d'une mention textuelle, d'une icône ou d'un comportement propre."
     ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
   },
   {
     "id": 143,
@@ -2504,11 +2514,7 @@
       "Identifier les liens internes vers des contenus dont l'accès nécessite une authentification.",
       "Vérifier que ces liens se différencient visuellement des autres liens internes."
     ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
   },
   {
     "id": 144,
@@ -2530,11 +2536,7 @@
       "Examiner le contenu pour y détecter les liens mailto ou tel.",
       "Vérifier que le libellé du lien est suffisamment explicite."
     ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
   },
   {
     "id": 145,
@@ -2547,17 +2549,11 @@
       "Faciliter l’utilisation des numéros de téléphone, notamment sur les terminaux mobiles."
     ],
     "implementationIntro": "Utiliser le balisage HTML standard :",
-    "implementation": [
-      "Baliser les numéros avec un lien a href='tel:+xx...'"
-    ],
+    "implementation": ["Baliser les numéros avec un lien a href='tel:+xx...'"],
     "control": [
       "Vérifier dans le code HTML le balisage des numéros de téléphone sous la forme a href='tel:...'."
     ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
   },
   {
     "id": 146,
@@ -2579,13 +2575,8 @@
       "Identifier les liens avec target='_blank'.",
       "Vérifier la présence d'un avertissement explicite."
     ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
-  }
-  ,
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
+  },
   {
     "id": 147,
     "title": "Le format des fichiers proposés en téléchargement est indiqué",
@@ -2605,13 +2596,8 @@
     "control": [
       "Vérifier que chaque lien de téléchargement indique son format."
     ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
-  }
-  ,
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
+  },
   {
     "id": 148,
     "title": "La taille des fichiers internes proposés en téléchargement est indiquée",
@@ -2631,13 +2617,8 @@
     "control": [
       "Vérifier que le poids est indiqué pour chaque fichier téléchargeable."
     ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
-  }
-  ,
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
+  },
   {
     "id": 149,
     "title": "La langue des fichiers en téléchargement est précisée lorsqu'elle diffère",
@@ -2657,13 +2638,8 @@
     "control": [
       "Pour chaque fichier en langue étrangère, vérifier que l'information est disponible avant le clic."
     ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
-  }
-  ,
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
+  },
   {
     "id": 150,
     "title": "Le nommage des fichiers internes permet d'en identifier le contenu et la provenance",
@@ -2684,13 +2660,8 @@
     "control": [
       "Vérifier que le nom du fichier téléchargé contient bien la source et le type de contenu."
     ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
-  }
-  ,
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
+  },
   {
     "id": 151,
     "title": "La mise en place de liens entrants n’est ni interdite ni restreinte",
@@ -2707,16 +2678,9 @@
       "Supprimer les clauses d'interdiction dans les Mentions Légales.",
       "Autoriser explicitement les liens entrants."
     ],
-    "control": [
-      "Vérifier les Mentions Légales et CGU."
-    ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
-  }
-  ,
+    "control": ["Vérifier les Mentions Légales et CGU."],
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
+  },
   {
     "id": 152,
     "title": "Tous les liens internes sont valides",
@@ -2737,10 +2701,6 @@
     "control": [
       "Vérifier l'absence de liens internes menant à des erreurs 404."
     ],
-    "screenshotsSources": [
-      "Mauvais exemple",
-      "Bon exemple",
-      "Code Source"
-    ]
+    "screenshotsSources": ["Mauvais exemple", "Bon exemple", "Code Source"]
   }
 ]
