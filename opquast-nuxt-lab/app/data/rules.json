@@ -78,6 +78,7 @@
     "id": 9,
     "title": "Les conditions de modération des espaces publics sont indiquées.",
     "path": "/rules/9",
+    "authors": ["Abdulmalek ESUGHI"],
     "tags": ["Contenus", "Editorial"],
     "objectives": [
       "Informer les utilisateurs des règles de modération des espaces publics.",
@@ -93,16 +94,12 @@
       "Vérifier la présence de conditions de modération dans les espaces publics.",
       "Vérifier que les conditions sont faciles à trouver et à comprendre."
     ],
-    "screenshotsSources": [
-      "",
-      "",
-      ""
-    ]
+    "screenshotsSources": ["", "", ""]
   },
   {
     "id": 10,
     "title": "Les contenus ou fichiers destinés à des espaces publics peuvent être vérifiés avant leur envoi définitif.",
-    "authors": ["Marco BARONI"],
+    "authors": ["Abdulmalek ESUGHI"],
     "path": "/rules/10",
     "description": "Il est fort agaçant de voir publier un message sous une forme dégradée ou de constater après envoi que l’on a écrit une grosse bêtise. La prévisualisation permet de voir les contenus en contexte et donne la possibilité de les corriger ou de les peaufiner.",
     "tags": ["Contenus", "Développement"],
@@ -121,16 +118,13 @@
       "Saisir des informations destinées à être rendues publiques telles que des images associées à un compte ou un commentaire.",
       "Vérifier que la soumission définitive du formulaire de saisie est précédée d'une étape permettant, si l'utilisateur le souhaite, de contrôler et de modifier le résultat de sa saisie avant publication."
     ],
-    "screenshotsSources": [
-      "",
-      "",
-      ""
-    ]
+    "screenshotsSources": ["", "", ""]
   },
   {
     "id": 11,
     "title": "Les espaces publics proposent au moins un moyen de signaler les abus.",
     "path": "/rules/11",
+    "authors": ["Abdulmalek ESUGHI"],
     "tags": ["Conception", "Contenus"],
     "objectives": [
       "Permettre aux utilisateurs de signaler les contenus abusifs ou inappropriés.",
@@ -146,16 +140,13 @@
       "Vérifier la présence d'un moyen de signaler les abus dans les espaces publics.",
       "Vérifier que ce moyen est facilement accessible et fonctionnel."
     ],
-    "screenshotsSources": [
-      "",
-      "",
-      ""
-    ]
+    "screenshotsSources": ["", "", ""]
   },
   {
     "id": 12,
     "title": "Chaque graphique est accompagné de ses données numériques.",
     "path": "/rules/12",
+    "authors": ["Abdulmalek ESUGHI"],
     "tags": ["Accessibilité", "Conception", "Contenus", "Editorial", "SEO"],
     "objectives": [
       "Rendre les graphiques accessibles à tous les utilisateurs.",
@@ -171,16 +162,13 @@
       "Vérifier que chaque graphique dispose de ses données numériques.",
       "Vérifier que les utilisateurs peuvent accéder aux données même sans affichage graphique."
     ],
-    "screenshotsSources": [
-      "",
-      "",
-      ""
-    ]
+    "screenshotsSources": ["", "", ""]
   },
   {
     "id": 13,
     "title": "La page des résultats de recherche indique le nombre de résultats, le nombre de pages de résultats, et le nombre de résultats par page.",
     "path": "/rules/13",
+    "authors": ["Abdulmalek ESUGHI"],
     "tags": ["Conception", "Contenus", "Développement"],
     "objectives": [
       "Aider l'utilisateur à évaluer rapidement le volume de résultats.",
@@ -199,16 +187,13 @@
       "Vérifier que le nombre de pages est indiqué.",
       "Vérifier que le nombre de résultats par page est visible."
     ],
-    "screenshotsSources": [
-      "",
-      "",
-      ""
-    ]
+    "screenshotsSources": ["", "", ""]
   },
   {
     "id": 14,
     "title": "Les contenus ne détournent pas de caractères pour simuler une mise en forme visuelle.",
     "path": "/rules/14",
+    "authors": ["Abdulmalek ESUGHI"],
     "tags": ["Accessibilité", "Contenus", "Editorial", "SEO"],
     "objectives": [
       "Assurer l'accessibilité des contenus pour tous les utilisateurs.",
@@ -226,11 +211,7 @@
       "Vérifier qu'aucun caractère ne remplace une balise de sémantique.",
       "Vérifier la lisibilité du code source par les lecteurs d'écran."
     ],
-    "screenshotsSources": [
-      "",
-      "",
-      ""
-    ]
+    "screenshotsSources": ["", "", ""]
   },
 
   {
