@@ -1,7 +1,7 @@
 <script setup>
 import { getRuleById } from '~/data/rules'
 
-const ruleId = 10
+const ruleId = 156
 const rule = getRuleById(ruleId)
 const activeTab = ref('preview')
 </script>
@@ -55,19 +55,9 @@ const activeTab = ref('preview')
         Objectif
       </h2>
 
-      <ul class="mt-1 list-disc pl-5 space-y-2 text-sm text-zinc-300">
+      <ul class="mt-3 list-disc pl-5 space-y-2 text-sm text-zinc-300">
         <li v-for="o in rule.objectives" :key="o">{{ o }}</li>
       </ul>
-      <ul
-        v-if="Array.isArray(rule.objectives)"
-        class="mt-3 list-disc pl-5 space-y-2 text-sm text-zinc-300"
-      >
-        <li v-for="o in rule.objectives" :key="o">{{ o }}</li>
-      </ul>
-
-      <p v-else class="mt-1 list-disc pl-5 space-y-2 text-sm text-zinc-300">
-        {{ rule.objective }}
-      </p>
     </section>
 
     <!-- Mise en œuvre -->
@@ -80,7 +70,7 @@ const activeTab = ref('preview')
         {{ rule.implementationIntro }}
       </p>
 
-      <ul class="mt-1 list-disc pl-5 space-y-2 text-sm text-zinc-300">
+      <ul class="mt-3 list-disc pl-5 space-y-2 text-sm text-zinc-300">
         <li v-for="x in rule.implementation" :key="x">{{ x }}</li>
       </ul>
     </section>
@@ -111,7 +101,6 @@ const activeTab = ref('preview')
           <div
             class="aspect-[16/10] rounded-2xl border border-zinc-800 bg-zinc-900/20 overflow-hidden flex items-center justify-center"
           >
-            <!-- Image -->
             <a
               :href="`/screenshots/rule-${rule.id}/screenshot-${index + 1}.png`"
               target="_blank"
@@ -119,10 +108,8 @@ const activeTab = ref('preview')
               class="block cursor-zoom-in"
             >
               <img
-                :src="`/screenshots/rule-${rule.id}/screenshot-${
-                  index + 1
-                }.png`"
-                :alt="`Exemple d’application de la règle ${rule.id}`"
+                :src="`/screenshots/rule-${rule.id}/screenshot-${index + 1}.png`"
+                :alt="`Exemple d'application de la règle ${rule.id}`"
                 class="h-full w-full object-cover"
                 onerror="
                   this.style.display = 'none'
@@ -131,7 +118,6 @@ const activeTab = ref('preview')
               />
             </a>
 
-            <!-- Placeholder -->
             <div class="hidden text-center px-4">
               <div class="text-sm text-zinc-300 font-medium">
                 Screenshot à ajouter
@@ -140,7 +126,6 @@ const activeTab = ref('preview')
             </div>
           </div>
 
-          <!-- Source associée -->
           <div class="mt-2 text-xs text-zinc-500">
             Source :
             <a
@@ -195,87 +180,68 @@ const activeTab = ref('preview')
         <!-- Content -->
         <div class="p-6">
           <!-- RENDU -->
-          <div v-if="activeTab === 'preview'" class="space-y-4">
+          <div v-if="activeTab === 'preview'" class="space-y-6">
             <div class="text-sm text-zinc-400">
-              Exemple de rubrique visible dès la page d’accueil
+              Exemple de fil d'Ariane indiquant la position dans l'arborescence
             </div>
 
-            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-              <h3 class="text-base font-semibold text-zinc-100 mb-3">
-                Aperçu de votre commentaire
-              </h3>
-              
-              <div class="rounded border border-zinc-700 bg-zinc-900 p-4 mb-3">
-                <p class="text-sm text-zinc-300">
-                  Votre message apparaîtra comme ceci une fois publié.
-                </p>
-              </div>
-              
-              <div class="flex gap-2">
-                <button class="px-4 py-2 text-sm rounded bg-zinc-700 text-zinc-200 hover:bg-zinc-600">
-                  Modifier
-                </button>
-                <button class="px-4 py-2 text-sm rounded bg-blue-600 text-white hover:bg-blue-500">
-                  Publier
-                </button>
+            <!-- Bonne pratique -->
+            <div class="space-y-2">
+              <div class="text-xs font-medium text-green-400">✅ Bonne pratique : Fil d'Ariane complet</div>
+              <div class="rounded-xl border border-green-900/50 bg-zinc-950 p-4">
+                <nav aria-label="Fil d'Ariane" class="text-sm mb-4">
+                  <ol class="flex items-center gap-2 text-zinc-400">
+                    <li><a href="#" class="hover:text-zinc-200">Accueil</a></li>
+                    <li class="text-zinc-600">&gt;</li>
+                    <li><a href="#" class="hover:text-zinc-200">Boutique</a></li>
+                    <li class="text-zinc-600">&gt;</li>
+                    <li><a href="#" class="hover:text-zinc-200">Chaussures</a></li>
+                    <li class="text-zinc-600">&gt;</li>
+                    <li class="text-zinc-100 font-medium" aria-current="page">Chaussures de sport</li>
+                  </ol>
+                </nav>
+                <h1 class="text-lg font-semibold text-zinc-100">Chaussures de sport</h1>
+                <p class="text-sm text-zinc-400 mt-2">L'utilisateur sait exactement où il se trouve</p>
               </div>
             </div>
-          </div>
+
+            <!-- Mauvaise pratique -->
+            <div class="space-y-2">
+              <div class="text-xs font-medium text-red-400">❌ Mauvaise pratique : Aucune indication de position</div>
+              <div class="rounded-xl border border-red-900/50 bg-zinc-950 p-4">
+                <h1 class="text-lg font-semibold text-zinc-100">Chaussures de sport</h1>
+                <p class="text-sm text-zinc-500 mt-2">Où suis-je dans le site ? Impossible de savoir...</p>
+              </div>
+            </div>
           </div>
 
           <!-- CODE -->
-          <div v-else>
-            <pre
-              class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"
-            >
-<code>
-&lt;div class=&quot;rounded-xl border border-zinc-800 bg-zinc-950 p-5&quot;&gt;
-  &lt;div class=&quot;flex items-center justify-between&quot;&gt;
-    &lt;h3 class=&quot;text-base font-semibold text-zinc-100&quot;&gt;
-      Quoi de neuf ?
-    &lt;/h3&gt;
-    &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;Actualités du site&lt;/span&gt;
-  &lt;/div&gt;
+          <div v-else class="space-y-4">
+            <div>
+              <div class="text-xs font-medium text-red-400 mb-2">❌ À ne pas faire (Navigation sans repère) :</div>
+              <pre class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"><code>&lt;!-- Mauvais : On ne sait pas où l'on est dans la liste --&gt;
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="/"&gt;Accueil&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/produits"&gt;Produits&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </div>
 
-  &lt;ul class=&quot;mt-4 space-y-3&quot;&gt;
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;div class=&quot;flex items-center gap-2&quot;&gt;
-          &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-            Nouvelle fonctionnalité publiée
-          &lt;/span&gt;
-          &lt;span
-            class=&quot;text-[11px] uppercase tracking-wide rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-zinc-200&quot;
-          &gt;
-            Nouveau
-          &lt;/span&gt;
-        &lt;/div&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Mise en ligne d’un nouveau service accessible depuis l’accueil.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;05/01/2026&lt;/span&gt;
-    &lt;/li&gt;
+            <div>
+              <div class="text-xs font-medium text-green-400 mb-2">✅ À privilégier (Fil d'Ariane sémantique) :</div>
+              <pre class="rounded-xl bg-zinc-950 p-5 overflow-x-auto text-sm text-zinc-100"><code>&lt;!-- Bon : Chemin hiérarchique clair --&gt;
+&lt;nav aria-label="Fil d'Ariane"&gt;
+    &lt;ol&gt;
+        &lt;li&gt;&lt;a href="/"&gt;Accueil&lt;/a&gt; &amp;gt; &lt;/li&gt;
+        &lt;li&gt;&lt;a href="/boutique"&gt;Boutique&lt;/a&gt; &amp;gt; &lt;/li&gt;
+        &lt;li aria-current="page"&gt;Chaussures de sport&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+            </div>
 
-    &lt;li class=&quot;flex items-start justify-between gap-4&quot;&gt;
-      &lt;div&gt;
-        &lt;span class=&quot;text-sm font-medium text-zinc-100&quot;&gt;
-          Mise à jour du contenu éditorial
-        &lt;/span&gt;
-        &lt;p class=&quot;text-sm text-zinc-400&quot;&gt;
-          Actualisation des informations principales du site.
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;span class=&quot;text-xs text-zinc-500&quot;&gt;03/01/2026&lt;/span&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code>
-</pre>
-
-            <p class="mt-3 text-xs text-zinc-500">
-              La prévisualisation permet de vérifier avant de publier.
+            <p class="text-xs text-zinc-500">
+              Le fil d'Ariane permet à l'utilisateur de se repérer et de naviguer facilement dans la hiérarchie du site.
             </p>
           </div>
         </div>
@@ -297,16 +263,8 @@ const activeTab = ref('preview')
   scrollbar-color: transparent transparent;
   border-radius: 4px;
 }
-.scrollbar-dark {
-  scrollbar-color: transparent transparent;
-  border-radius: 4px;
-}
 .scrollbar-light:hover {
   scrollbar-color: #a3a3a3 transparent;
-  border-radius: 4px;
-}
-.scrollbar-dark:hover {
-  scrollbar-color: #4d4d4d transparent;
   border-radius: 4px;
 }
 </style>
